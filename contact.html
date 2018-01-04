@@ -1,0 +1,169 @@
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Ashish Cosmetic Surgery</title>
+</head>
+
+<body>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <style>
+    nav {
+      height: 80px;
+      line-height: 80px;
+    }
+    
+    nav ul li.active {
+      background-color: #448aff;
+    }
+    
+    nav ul a {
+      font-size: 12px;
+    }
+    
+    #map {
+      height: 50%;
+      width: 100%;
+      margin-top: 50px;
+    }
+  </style>
+  <!-- <nav class="light-blue darken-1">-->
+  <nav class="white">
+    <div class="container">
+      <div class="nav-wrapper ">
+        <a style="color:#757575" href="#!" class="brand-logo">Dr Ashish</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse valign-wrapper" style="line-size:80px;"><i style="color:#757575"class="large material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html" style="color:#757575">HOME</a></li>
+           <li><a href="procedures.html" style="color:#757575">PROCEDURES</a></li>
+          <li><a href="gallery.html" style="color:#757575">GALLERY</a></li>
+          <li><a href="about.html" style="color:#757575">ABOUT</a></li>
+          <li><a href="faq.html" style="color:#757575">FAQ</a></li>
+          <li class="active"><a href="contact.html">CONTACT</a></li>
+          <li class="center-align green" style="padding-left:10px;padding-right:10px;"><span style="line-height:40px;align:center;"><span style="font-size:1rem;">BOOK AN APPOINTMENT</span><br><a style="font-size:1rem;">9769130142</a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="index.html" style="color:#757575">HOME</a></li>
+ <li><a href="procedures.html" style="color:#757575">PROCEDURES</a></li>
+       <li><a href="gallery.html" style="color:#757575">GALLERY</a></li>
+      <li><a href="about.html" style="color:#757575">ABOUT</a></li>
+      <li><a href="faq.html" style="color:#757575">FAQ</a></li>
+      <li class="active"><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        <div id="map"></div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card blue darken-1" style="margin-top: 50px;height:50%">
+          <div class="card-content white-text">
+            <span class="card-title">Dr Ashish's Cosmetic Clinic</span>
+            <p>
+              Address:</BR>
+              #G4, Radhe Vallab, Modi Chambers, Landmark: French bridge Corner, Mumbai<br>
+              Telephone No.: +91-22-22067676</BR><br> Fax No.: +91-22-22080871</BR><br> Email id : helpdesk@bombayhospital.com</BR>
+              </BR>
+              For Foreign Nationals: marketing@bombayhospital.com</BR>
+            </p>
+          </div>
+          <div class="card-action green white-text">
+            <a href="#" style="color: #fff">Call : 28110447</a>
+          </div>
+        </div>
+      </div>
+    </div>
+          <div class="row center-align">
+        <div class="col m6 s12 ">
+          <div class="card  darken-1" >
+            <div class="card-content " >
+              <span class="card-title  section__titlebody">Contact Us</span>
+              <div class="row right-align">
+      <div class="row left-align">
+        <div class="input-field col s12">
+          <input placeholder="Enter Your Name" id="first_name" type="text" class="validate">
+          <label for="first_name" style="color:#000 textSize">First Name</label>
+        </div>
+      </div>
+       <div class="row left-align">
+        <div class="input-field col  s12">
+          <input placeholder="Enter Your Phone Number" id="first_name" type="text" class="validate">
+          <label for="first_name">Phone Number</label>
+        </div>
+      </div>
+       <div class="row left-align">
+        <div class="input-field col  s12">
+          <input placeholder="Enter Your Email Id" id="first_name" type="text" class="validate">
+          <label for="first_name">Email Id</label>
+        </div>
+      </div>
+              </div>
+            </div>
+            <div class="card-action green">
+              <a class = "white-text" href="#">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  <script>
+    function initMap() {
+      var uluru = {
+        lat: 19.0760,
+        lng: 72.8777
+      };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6neMwDnZ9WahQ8QEYp6zJ-WhyrApakyc&callback=initMap">
+  </script>
+  <footer class="page-footer  grey darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Dr.Ashish Cosmetics</h5>
+          <p class="grey-text text-lighten-4">+91 9769112123</p>
+          <p class="grey-text text-lighten-4">Centrium Mall, Lokhandwala Twp, Kandivali East, Mumbai, Maharashtra 400101</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Site Map</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+            <li><a class="grey-text text-lighten-3" href="surgeries.html">Surgeries</a></li>
+            <li><a class="grey-text text-lighten-3" href="gallery.html">Gallery</a></li>
+            <li><a class="grey-text text-lighten-3" href="about.html">About</a></li>
+            <li><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-1">
+      <div class="container">
+        &#169; 2016 Copyright Reserved
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
